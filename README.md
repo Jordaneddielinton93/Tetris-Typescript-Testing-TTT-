@@ -19,7 +19,7 @@
 <br>
 
 - TDD Screen-Layout
-  - create a <main.> with a of arround 700w x700h
+  - create a <main.> with a of arround 700w x700h  ✅
   - An Array of Object's 0-9  ( 10 columns )
   - Each object holds 10 key/values -> ( 0:false to 9:false )
     - keys are numeric 

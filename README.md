@@ -1,49 +1,52 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h1 align="center"> <u> Tetris In Typescript Testings</u> </h1>
 
-## Available Scripts
+<h2 align="center"> <u> Plan of action Tetris (Height level) </u> </h2>
 
-In the project directory, you can run:
+1. Create a <u> List of steps </u> that i would need todo to make said tetris game.
 
-### `npm start`
+2. For Each Step do TDD on what is needed
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+4. Try to use Typescript as much as possible.
+ (LAWS-no setting types as any, nomatter the cost)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+---
+<br>
+<h1 align="center"> <u> List of steps </u> </h1>
 
-### `npm test`
+ <details open>
+<summary> step by step git by git </summary>
+<br>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- TDD Screen-Layout
+  - create a <main.> with a of arround 700w x700h
+  - An Array of Object's 0-9  ( 10 columns )
+  - Each object holds 10 key/values -> ( 0:false to 9:false )
+    - keys are numeric 
+    - values are booleans
+  - Map Through each object and on each object map through each keyValue Pair.
+  - for Each key value pair mapped through return a div box that is 10%heigh and 10% width in a column (bottom to top [0-9])
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+  <br><br>
+- TDD Tetris Shape 
+  - Create a function called CreateShape that takes in two parameters (rownumber,columnNumber)
+  - Using CreateShape function change the key value's of the shape/boxs to be true starting from the center top of the screen (rows/column) also saving both params to an array ().
+  <br><br>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- TDD Tetris Collision
+  - Create a function that moves the last peace down by 1 untill it hits a filled or bottom of the screen e:g (row:0)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+</details>
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+<h1 align="center"> <u> Dependencies </u> </h1>
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+ <details >
+<summary> Installations & Dependencies </summary>
+<br>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- StoryBook
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+</details>
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-# Tetris-Typescript-Testing-TTT
-# Tetris-Typescript-Testing-TTT-
-# Tetris-Typescript-Testing-TTT-

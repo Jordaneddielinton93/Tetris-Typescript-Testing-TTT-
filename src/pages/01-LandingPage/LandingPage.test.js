@@ -1,7 +1,7 @@
-import { render, screen } from "@testing-library/react"
+import { getAllByTestId, render, screen } from "@testing-library/react"
 import LandingPage from "./LandingPage"
 
-describe.skip("The whole landing page has Tetris and  grinds",()=>{
+describe("The whole landing page has Tetris and  grinds",()=>{
 
   it("should render a landing page",()=>{
     render(<LandingPage/>)
@@ -21,7 +21,17 @@ describe.skip("The whole landing page has Tetris and  grinds",()=>{
     expect(getComputedStyle(TetrisGridContainer).width).toBe("700px")
 
   })
+  it("should contain 100 square divs",()=>{
+    render(<LandingPage/>)
+    let TetrisBoxs=screen.getAllByTestId("Tetris-box")
+    expect(TetrisBoxs).toHaveLength(100)
+  }) 
 
-  
+  // it("should create an L shap block on the crid",()=>{
+  //   render(<LandingPage />)
+  //   let TetrisBoxs=screen.getAllByTestId("Tetris-box")
+  //   expect(TetrisBoxs).toHaveLength(100)
+  // }) 
+
 })
 

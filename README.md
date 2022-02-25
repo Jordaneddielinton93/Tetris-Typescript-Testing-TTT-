@@ -20,11 +20,15 @@
 
 - TDD Screen-Layout
   - create a <main.> with a of arround 700w x700h  ✅
-  - An Array of Object's 0-9  ( 10 columns )
-  - Each object holds 10 key/values -> ( 0:false to 9:false )
-    - keys are numeric 
-    - values are booleans
-  - Map Through each object and on each object map through each keyValue Pair.
+
+  <strike>
+  - ~~ An Array of Object's 0-9  ( 10 columns ) ~~
+  - ~~ Each object holds 10 key/values -> ( 0:false to 9:false ) ~~
+    - ~~ keys are numeric ~~
+    - ~~ values are booleans ~~
+  
+  - Map Through each object and on each object map through each keyValue Pair.7
+  </strike>
   - for Each key value pair mapped through return a div box that is 10%heigh and 10% width in a column (bottom to top [0-9])
 
 

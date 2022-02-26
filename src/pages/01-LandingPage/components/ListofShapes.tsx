@@ -1,6 +1,7 @@
+import { useState } from "react"
 
 
-export const ListofShapes=[
+export const ListofShapes:number[][]=[
   // backwards L
   //FIRST digit is leftside of shape
   //THIRD digit is Bottom of shape
@@ -10,3 +11,4 @@ export const ListofShapes=[
   [4,14,24,5],
   [3,4,15,5]
 ]
+

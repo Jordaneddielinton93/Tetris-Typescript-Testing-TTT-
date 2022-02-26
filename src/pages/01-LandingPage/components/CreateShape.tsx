@@ -2,9 +2,9 @@ import { useEffect, useState } from "react"
 import { ListofShapes } from "./ListofShapes"
 
 export default function CreateShape():any{
-  
+  let [ChangeUseEffectState,setChangeUseEffectState]=useState<number>(0)
   let [shapeShown,setShapeShown]= useState<number[]>([5,15,25,24])
-  console.log(shapeShown)
+  // console.log(shapeShown)
   
   useEffect(()=>{
 
@@ -14,8 +14,8 @@ export default function CreateShape():any{
   
   }
   CreateShape()
-},[])
+},[ChangeUseEffectState])
 
-  return [shapeShown,setShapeShown]
+  return [shapeShown,setShapeShown,setChangeUseEffectState]
 }
 
